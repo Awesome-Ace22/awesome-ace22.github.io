@@ -47,7 +47,8 @@ header nav ul li a {
 }
 
 .content img {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 1rem auto;
 }
 
