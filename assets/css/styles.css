@@ -28,7 +28,7 @@ header nav ul li a {
 
 /* Flex container for layout */
 .content {
-    display: flex;
+    display: block;
     margin: 1rem;
     gap: 1rem;
 }
