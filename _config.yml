@@ -2,7 +2,6 @@ title: My Design Porfolio
 description: A description of your site
 baseurl: "" # Leave empty for root deployment
 url: "https://awesome-ace22.github.io" # Update with your actual GitHub Pages URL
-theme: none
 exclude:
   - README.md
 plugins:
