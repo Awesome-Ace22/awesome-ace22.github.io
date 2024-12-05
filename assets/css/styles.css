@@ -32,7 +32,9 @@ header nav ul li a {
     margin: 1rem;
     gap: 1rem;
 }
-
+.content-wrapper { 
+    display: block;
+}
 .content img {
     max-width: 100%;
     height: auto;
@@ -41,15 +43,12 @@ header nav ul li a {
 .content h1, 
 .content h2, 
 .content h3, 
-.content p {
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.content img {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
+.content p,
+.content img, 
+.content video { 
+    display: block; 
+    margin-bottom: 1rem; 
+    width: 100%; 
 }
 
 aside {
