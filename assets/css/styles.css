@@ -26,9 +26,11 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Flex container for layout */
 .content {
     display: flex;
     margin: 1rem;
+    gap: 1rem;
 }
 
 aside {
@@ -40,6 +42,10 @@ aside {
 main {
     width: 75%;
     padding: 1rem;
+}
+
+main h1, main h2, main h3, main p {
+    display: block;
 }
 
 footer {
