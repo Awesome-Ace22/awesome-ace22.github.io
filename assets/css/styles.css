@@ -33,12 +33,49 @@ header nav ul li a {
     gap: 1rem;
 }
 
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+.content h1, 
+.content h2, 
+.content h3, 
+.content p {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.content img {
+    display: block;
+    margin: 1rem auto;
+}
+
 aside {
     width: 20%;
     padding: 1rem;
     background: #f4f4f4;
 }
+/* Style for all sidebar links */
+aside a {
+    color: #555;
+    text-decoration: none;
+}
 
+/* Override visited link color */
+aside a:visited {
+    color: #555;
+}
+
+/* Optional: Hover and active states for better UX */
+aside a:hover {
+    color: #333; /* Slightly darker or lighter for hover effect */
+    text-decoration: underline;
+}
+
+aside a:active {
+    color: #00008e;
+}
 main {
     width: 75%;
     padding: 1rem;
