@@ -65,25 +65,59 @@ aside {
     width: 20%;
     padding: 1rem;
     background: #f4f4f4;
+    position: sticky; 
+    top: 0; 
+    height: 100%; /* Full height of the page */ 
+    overflow-y: auto;
 }
-/* Style for all sidebar links */
-aside a {
+/* Remove bullets/list markers and make links block elements */
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 0; /* Remove margin for list items */
+}
+
+aside ul li a {
+    display: block; /* Make links block elements */
     color: #555;
+    padding: 0.5rem 1rem; /* Add some padding for better UX */
     text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover and active states */
 }
 
-/* Override visited link color */
-aside a:visited {
-    color: #555;
+/* Hover and active states for links */
+aside ul li a:hover {
+    background-color: #ddd; /* Change color on hover */
 }
 
-aside a:hover {
-    color: #333;
-    text-decoration: underline;
+aside ul li a:active, 
+aside ul li a:focus {
+    background-color: #bbb; /* Change color when active or focused */
 }
 
-aside a:active {
-    color: #00008e;
+/* Styling for dropdown links */
+aside ul li.dropdown {
+    position: relative;
+}
+
+aside ul li.dropdown > a::after {
+    content: "▼"; /* Dropdown arrow */
+    float: right;
+    margin-left: 0.5rem;
+}
+
+aside ul li.dropdown ul {
+    display: none; /* Hide dropdown content initially */
+    list-style: none;
+    padding-left: 1rem; /* Indent dropdown items */
+}
+
+aside ul li.dropdown:hover > ul,
+aside ul li.dropdown:focus-within > ul {
+    display: block; /* Show dropdown content on hover or focus */
 }
 /* Main content styling */
 main {
@@ -116,3 +150,15 @@ ul ul {
     margin: 2rem auto;
     max-width: 600px;
 }
+
+/*
+Can you make some changes to the sidebar for me, I want to 
+- Remove the bullets/list markers
+- Display the links as block elements
+- Have the block change color on hover
+- Have the block change color if active 
+- be the Full height of the page
+- Make it stick, even on scroll
+- Enable scrolling if the sidenav has too much content
+- Make the placeholder list items (<a href="#">) that are just folders for the links drop downs
+*/
