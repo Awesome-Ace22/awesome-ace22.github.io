@@ -29,6 +29,14 @@ header nav ul li a {
 /* Flex container for layout */
 .content {
     display: flex; 
+    flex-direction: row;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+/* Page content container for vertical stacking */
+.page-content {
+    display: flex; 
     flex-direction: column;
     margin: 1rem;
     gap: 1rem;
@@ -36,7 +44,9 @@ header nav ul li a {
 .content-wrapper { 
     display: block;
 }
-.content img {
+.content img,
+.content video {
+    display: block; 
     max-width: 100%;
     height: auto;
     margin: 1rem 0;
@@ -44,14 +54,13 @@ header nav ul li a {
 .content h1, 
 .content h2, 
 .content h3, 
-.content p,
-.content img, 
-.content video { 
+.content p { 
     display: block; 
     margin-bottom: 1rem; 
     width: 100%; 
 }
 
+/* Sidebar styling */
 aside {
     width: 20%;
     padding: 1rem;
@@ -68,15 +77,15 @@ aside a:visited {
     color: #555;
 }
 
-/* Optional: Hover and active states for better UX */
 aside a:hover {
-    color: #333; /* Slightly darker or lighter for hover effect */
+    color: #333;
     text-decoration: underline;
 }
 
 aside a:active {
     color: #00008e;
 }
+/* Main content styling */
 main {
     width: 75%;
     padding: 1rem;
@@ -86,6 +95,7 @@ main h1, main h2, main h3, main p {
     display: block;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
