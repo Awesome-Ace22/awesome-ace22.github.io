@@ -1,0 +1,10 @@
+title: My Design Porfolio
+description: A description of your site
+baseurl: "" # Leave empty for root deployment
+url: "https://awesome-ace22.github.io" # Update with your actual GitHub Pages URL
+theme: jekyll-theme-primer
+exclude:
+  - README.md
+plugins:
+  - jekyll-seo-tag
+source: .
