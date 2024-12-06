@@ -47,7 +47,7 @@ header nav ul li a {
 .content img,
 .content video {
     display: block; 
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
     margin: 1rem 0;
 }
